@@ -1,0 +1,133 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --blue: #2563EB;
+  --blue2: #1d4ed8;
+  --blue3: #e8f0fe;
+  --blue4: #dbeafe;
+  --dark: #1E293B;
+  --white: #ffffff;
+  --gray: #64748b;
+  --light: #F8FAFC;
+  --border: #dde7f5;
+  --green: #16a34a;
+  --orange: #d97706;
+  --red: #dc2626;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.06);
+}
+
+.sec-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--dark);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sec-title::before {
+  content: '';
+  width: 4px;
+  height: 18px;
+  background: var(--blue);
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.badge {
+  font-size: 0.68rem;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  background: var(--blue3);
+  color: var(--blue);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-primary {
+  background: linear-gradient(135deg, var(--blue2), var(--blue));
+  color: white;
+}
+.btn-primary:hover { box-shadow: 0 10px 26px rgba(37,99,235,0.3); }
+.btn-outline {
+  background: white;
+  color: var(--blue);
+  border: 1.5px solid var(--blue);
+}
+
+.page-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+@media (max-width: 640px) {
+  .page-wrap { padding: 1.25rem 1rem 3rem; }
+}
+
+.about-hero {
+  background: linear-gradient(135deg, var(--blue2), var(--blue));
+  border-radius: 14px;
+  padding: 1.5rem;
+  color: white;
+}
+.about-hero h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+.about-hero p {
+  font-size: 0.85rem;
+  opacity: 0.92;
+  line-height: 1.65;
+  max-width: 640px;
+}
+
+.app-shell {
+  min-height: 100vh;
+  padding-right: 72px;
+}
+@media (max-width: 640px) {
+  .app-shell { padding-right: 60px; }
+}

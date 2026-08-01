@@ -1,0 +1,35 @@
+.form-box {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.06);
+}
+.fg { margin-bottom: 0.9rem; }
+.fg label {
+  display: block;
+  font-size: 0.67rem;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.fg input, .fg textarea {
+  width: 100%;
+  background: var(--light);
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 9px 12px;
+  color: var(--dark);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  outline: none;
+  transition: border-color .2s;
+}
+.fg input:focus, .fg textarea:focus {
+  border-color: var(--blue);
+  background: white;
+}
+.fg textarea { height: 90px; resize: vertical; }
+.err-msg { font-size: 0.67rem; color: var(--red); margin-top: 3px; }
