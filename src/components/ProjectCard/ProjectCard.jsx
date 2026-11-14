@@ -6,6 +6,12 @@ export default function ProjectCard({ project }) {
 
   return (
     <div className={"proj-card" + (open ? " open" : "")} onClick={() => setOpen(!open)}>
+      <img
+        className="proj-image"
+        src={project.image}
+        alt={`${project.name} project preview`}
+        loading="lazy"
+      />
       <div className="proj-top">
         <span>{project.name}</span>
       </div>
