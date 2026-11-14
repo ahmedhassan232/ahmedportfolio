@@ -1,6 +1,7 @@
 const projects = [
   {
     id: 1,
+    image: "/images/projects/sales-performance.svg",
     name: "Sales Performance Dashboard",
     category: "powerbi",
     badge: "Featured",
@@ -16,6 +17,7 @@ const projects = [
   },
   {
     id: 2,
+    image: "/images/projects/hr-analytics.svg",
     name: "HR Analytics Dashboard",
     category: "powerbi",
     badge: "HR",
@@ -31,6 +33,7 @@ const projects = [
   },
   {
     id: 3,
+    image: "/images/projects/financial-dashboard.svg",
     name: "Financial Dashboard",
     category: "powerbi",
     badge: "Finance",
@@ -46,6 +49,7 @@ const projects = [
   },
   {
     id: 4,
+    image: "/images/projects/road-accidents.svg",
     name: "Road Accident Dashboard",
     category: "powerbi",
     badge: "Analytics",
@@ -61,6 +65,7 @@ const projects = [
   },
   {
     id: 5,
+    image: "/images/projects/coffee-shop.svg",
     name: "Coffee Shop Dashboard",
     category: "powerbi",
     badge: "Retail",
@@ -76,6 +81,7 @@ const projects = [
   },
   {
     id: 6,
+    image: "/images/projects/customer-segmentation.svg",
     name: "Customer Segmentation",
     category: "python",
     badge: "Customer",
@@ -91,6 +97,7 @@ const projects = [
   },
   {
     id: 7,
+    image: "/images/projects/product-review.svg",
     name: "Product Review Analysis",
     category: "python",
     badge: "Python · NLP",
@@ -106,6 +113,7 @@ const projects = [
   },
   {
     id: 8,
+    image: "/images/projects/ecommerce-sales.svg",
     name: "E-Commerce Sales Dashboard",
     category: "powerbi",
     badge: "Retail",
