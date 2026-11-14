@@ -23,6 +23,14 @@
   font-size: 0.82rem;
   text-transform: uppercase;
 }
+.proj-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #f1f5f9;
+  border-bottom: 1px solid var(--border);
+}
 .proj-body { padding: 0.9rem; }
 .proj-cat {
   font-size: 0.62rem;
