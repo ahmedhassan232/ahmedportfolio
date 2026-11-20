@@ -105,3 +105,8 @@
   .kpi-grid { grid-template-columns: repeat(2, 1fr); }
   .tools-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+.featured-projects { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; margin-bottom:1.5rem; }
+.featured-projects .feat-card { margin-bottom:0; min-height:220px; display:flex; flex-direction:column; justify-content:center; }
+.featured-projects .feat-card-stockflow { background:linear-gradient(135deg,#123b36,#16836d); }
+@media (max-width:640px) { .featured-projects { grid-template-columns:1fr; } }
