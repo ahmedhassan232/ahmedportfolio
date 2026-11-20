@@ -68,7 +68,7 @@ a{color:inherit;text-decoration:none}.layout{width:min(1120px,calc(100% - 340px)
 </header>
 
 <div class="kpis">
-<div class="kpi"><div class="kpi-icon" style="background:#eee9ff">🧩</div><strong>5</strong><label>SELECTED PROJECTS</label><small>Personal and academic work</small></div>
+<div class="kpi"><div class="kpi-icon" style="background:#eee9ff">🧩</div><strong>7</strong><label>SELECTED PROJECTS</label><small>Personal, academic, and SaaS work</small></div>
 <div class="kpi"><div class="kpi-icon" style="background:#dcfce9">⚙️</div><strong>FastAPI</strong><label>BACKEND FOCUS</label><small>Python · PostgreSQL</small></div>
 <div class="kpi"><div class="kpi-icon" style="background:#fff3c7">🌐</div><strong>2</strong><label>LANGUAGES</label><small>Arabic · English</small></div>
 <div class="kpi"><div class="kpi-icon" style="background:#deebff">🎓</div><strong>2023–2027</strong><label>EDUCATION</label><small>Bachelor of Artificial Intelligence</small></div>
@@ -113,7 +113,7 @@ a{color:inherit;text-decoration:none}.layout{width:min(1120px,calc(100% - 340px)
 
 <section id="projects" class="section">
 <h2 class="section-heading">🧩 Selected Projects</h2>
-<p class="section-sub">The five projects listed in the CV.</p>
+<p class="section-sub">Selected personal, academic, and professional projects.</p>
 <div class="projects" id="project-list"></div>
 </section>
 
@@ -160,7 +160,9 @@ const projects = [
  {title:"REAS – Real Estate Analytics System",category:"Analytics Application",icon:"🏢",accent:"#0d9488",soft:"#ccfbf1",description:"A real estate analytics application featuring a React frontend, Flask REST API, and data analytics dashboard.",technologies:["React","Flask","REST API"],links:[{label:"GitHub",url:"https://github.com/ahmedhassan232/REASs"},{label:"Live Demo",url:"https://rea-ss.vercel.app"}]},
  {title:"SmartReviewAI",category:"Academic Project",icon:"⭐",accent:"#db2777",soft:"#fce7f3",description:"An academic project focused on analyzing product reviews and identifying potentially fake ratings using Machine Learning and Natural Language Processing.",technologies:["Python","Machine Learning","NLP","React","API Integration"],links:[]},
  {title:"Noor Al-Islam",category:"Android Application",icon:"☪️",accent:"#059669",soft:"#d1fae5",description:"An Islamic mobile application developed using web technologies and packaged for Android.",technologies:["Web Technologies","Android Packaging"],links:[{label:"GitHub",url:"https://github.com/ahmedhassan232/noor-al-islam-app-"}]},
- {title:"Personal Portfolio",category:"Web Development",icon:"💻",accent:"#2563eb",soft:"#dbeafe",description:"A personal portfolio website showcasing development skills and software projects.",technologies:["Web Development"],links:[{label:"GitHub",url:"https://github.com/ahmedhassan232/ahmedportfolio"}]}
+ {title:"Personal Portfolio",category:"Web Development",icon:"💻",accent:"#2563eb",soft:"#dbeafe",description:"A personal portfolio website showcasing development skills and software projects.",technologies:["Web Development"],links:[{label:"GitHub",url:"https://github.com/ahmedhassan232/ahmedportfolio"}]},
+ {title:"Portify AI",category:"AI Portfolio Builder · SaaS",icon:"🤖",accent:"#7c3aed",soft:"#ede9fe",description:"An AI-powered platform that transforms PDF and DOCX CVs into polished personal portfolio websites with AI-assisted analysis and professional content generation.",technologies:["Next.js","TypeScript","OpenRouter","PostgreSQL"],links:[{label:"Live Demo",url:"https://portify-bliu6w3e7-ahmedhassan232s-projects.vercel.app"},{label:"GitHub",url:"https://github.com/ahmedhassan232/portify-ai"}]},
+ {title:"StockFlow",category:"Inventory Management · SaaS",icon:"📦",accent:"#0f766e",soft:"#ccfbf1",description:"A SaaS platform for inventory, warehouse, and sales management with multi-company support and Arabic/English language support.",technologies:["Python","FastAPI","PostgreSQL","Redis","Celery","React","TypeScript","Docker"],links:[{label:"Live Demo",url:"https://stockflow-murex-tau.vercel.app"},{label:"GitHub",url:"https://github.com/ahmedhassan232/stockflow"}]}
 ];
 const projectList=document.getElementById("project-list");
 projectList.innerHTML=projects.map(p=>'<article class="project"><div class="project-visual" style="--accent:'+p.accent+';--soft:'+p.soft+'"><div class="visual-icon">'+p.icon+'</div><span class="visual-caption">'+p.category+'</span></div><div class="project-body"><div class="project-topline"><span class="project-category" style="--accent:'+p.accent+';--soft:'+p.soft+'">'+p.category+'</span></div><h3>'+p.title+'</h3><p>'+p.description+'</p><div class="tags">'+p.technologies.map(t=>'<span class="tag">'+t+'</span>').join("")+'</div>'+(p.links.length?'<div class="project-links">'+p.links.filter(l=>l.url).map(l=>'<a class="project-link" href="'+l.url+'" target="_blank" rel="noreferrer">'+l.label+' ↗</a>').join("")+(p.links.some(l=>!l.url)?'<span class="project-link" aria-label="Private repository">Private repository</span>':'')+'</div>':'')+'</div></article>').join("");
