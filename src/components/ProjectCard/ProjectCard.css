@@ -93,3 +93,7 @@
   line-height: 1.6;
 }
 .proj-dataset { font-size: 0.75rem; color: var(--gray); }
+
+.proj-links { display:flex; flex-wrap:wrap; gap:.55rem; margin:.65rem 0; }
+.proj-links a { display:inline-flex; align-items:center; padding:.45rem .7rem; border-radius:7px; background:var(--blue3); color:var(--blue2); font-size:.7rem; font-weight:700; transition:background .2s ease, transform .2s ease; }
+.proj-links a:hover { background:var(--blue4); transform:translateY(-1px); }
