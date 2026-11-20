@@ -138,8 +138,8 @@ const projects = [
   },
   {
     id: 10, image: "/images/projects/sales-performance.svg", name: "StockFlow", category: "web", badge: "SaaS · Inventory",
-    problem: "A SaaS inventory and warehouse management platform for stock, sales, and multi-company operations.",
-    dataset: "Inventory, warehouse, and sales operations", tools: ["React", "TypeScript", "FastAPI", "PostgreSQL", "Redis", "Docker"],
+    problem: "A complete SaaS platform for inventory, warehouse, and sales management, with multi-company support and Arabic/English language support.",
+    dataset: "Inventory, warehouse, and sales operations", tools: ["Python", "FastAPI", "PostgreSQL", "Redis", "Celery", "React", "TypeScript", "Docker"],
     insights: ["Inventory and warehouse workflows", "Sales operations management", "Arabic and English experience"],
     recommendation: "Explore the live platform to see the inventory workflow.",
     liveUrl: "https://stockflow-murex-tau.vercel.app", sourceUrl: "https://github.com/ahmedhassan232/stockflow",
