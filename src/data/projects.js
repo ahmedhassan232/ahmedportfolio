@@ -127,6 +127,23 @@ const projects = [
     ],
     recommendation: "Strengthen loyalty programs and expand high-performing categories.",
   },
+
+  {
+    id: 9, image: "/images/projects/portify-ai.svg", name: "Portify AI", category: "web", badge: "AI · SaaS",
+    problem: "An AI-powered platform that transforms PDF and DOCX CVs into polished personal portfolio websites.",
+    dataset: "CV documents (PDF / DOCX)", tools: ["Next.js", "TypeScript", "OpenRouter", "PostgreSQL"],
+    insights: ["CV parsing and structured profile extraction", "AI-assisted professional content generation", "Responsive portfolio generation workflow"],
+    recommendation: "Try the live app and generate a portfolio from your own CV.",
+    liveUrl: "https://portify-bliu6w3e7-ahmedhassan232s-projects.vercel.app", sourceUrl: "https://github.com/ahmedhassan232/portify-ai",
+  },
+  {
+    id: 10, image: "/images/projects/stockflow.svg", name: "StockFlow", category: "web", badge: "SaaS · Inventory",
+    problem: "A SaaS inventory and warehouse management platform for stock, sales, and multi-company operations.",
+    dataset: "Inventory, warehouse, and sales operations", tools: ["React", "TypeScript", "FastAPI", "PostgreSQL", "Redis", "Docker"],
+    insights: ["Inventory and warehouse workflows", "Sales operations management", "Arabic and English experience"],
+    recommendation: "Explore the live platform to see the inventory workflow.",
+    liveUrl: "https://stockflow-murex-tau.vercel.app", sourceUrl: "https://github.com/ahmedhassan232/stockflow",
+  },
 ];
 
 export default projects;
