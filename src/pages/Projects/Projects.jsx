@@ -7,6 +7,7 @@ const filters = [
   { key: "all", label: "All" },
   { key: "powerbi", label: "Power BI" },
   { key: "python", label: "Python" },
+  { key: "web", label: "Web Apps" },
 ];
 
 export default function Projects() {
