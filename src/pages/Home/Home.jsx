@@ -6,7 +6,7 @@ import "./Home.css";
 
 const kpis = [
   { icon: "📊", iconBg: "#ede9fe", value: 12, label: "Dashboards Built" },
-  { icon: "💼", iconBg: "#dcfce7", value: 10, label: "Business Projects" },
+  { icon: "💼", iconBg: "#dcfce7", value: 15, label: "Business Projects" },
   { icon: "🗃", iconBg: "#fef3c7", value: 25, suffix: "+", label: "Datasets Analyzed" },
   { icon: "🎓", iconBg: "#dbeafe", value: 6, label: "Professional Certifications" },
 ];
