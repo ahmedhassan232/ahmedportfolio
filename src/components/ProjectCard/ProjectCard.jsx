@@ -24,6 +24,12 @@ export default function ProjectCard({ project }) {
             <span className="ptag" key={t}>{t}</span>
           ))}
         </div>
+        {(project.liveUrl || project.sourceUrl) && (
+          <div className="proj-links">
+            {project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>Live Demo ↗</a>}
+            {project.sourceUrl && <a href={project.sourceUrl} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>Source Code ↗</a>}
+          </div>
+        )}
         <div className="proj-detail">
           <h5>Dataset</h5>
           <p className="proj-dataset">{project.dataset}</p>
